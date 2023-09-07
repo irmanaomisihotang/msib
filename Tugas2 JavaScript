@@ -1,0 +1,47 @@
+<script>
+    let pegawai = "Ridwan"
+    let jabatan = "Manager"
+    let status = "Menikah"
+
+    switch (jabatan){
+     case "Manager":
+        gapok = 15000000;
+        break;
+    case "asisten Manager":
+        gapok = 10000000;
+        break;
+    case "staf":
+        gapok= 5000000;
+        break;
+    default:
+        gapok = 0;
+    }
+    let t_jabatan = 0.15 * gapok;
+    let bpjs = 0.1 * gapok;
+
+    if(status == "Menikah") t_keluarga = 0.2 * gapok;
+    else t_keluarga = 0;
+
+    let total_gaji = gapok + t_jabatan + bpjs + t_keluarga;
+    
+    document.write("<h1>DATA GAJI </h1>");
+    document.write(
+        "<br> nama pegawai : " +
+      pegawai +
+      "<br> jabatan : " +
+      jabatan +
+      "<br> status : " +
+      status +
+      "<br> gaji pokok : " +
+      gapok +
+      "<br> tunjangan jabatan : " +
+      t_jabatan +
+      "<br> bpjs : " +
+      bpjs+
+      "<br> tunjangan keluarga : " +
+      t_keluarga +
+      "<br> total gaji : " +
+      total_gaji
+  );
+
+</script>
