@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas4 javascript</title>
+  </head>
+  <body>
+    <form id="from">
+      <table
+        style="
+          width: 50%;
+          background-color: aqua;
+          border: 1px solid;
+          text-align: center;
+        "
+      >
+        <tr>
+          <th colspan="2">Form Input JavaScript</th>
+        </tr>
+        <tr>
+          <td><label for="">Nama</label></td>
+          <td>
+            <input
+              type="text"
+              name="nama"
+              id=""
+              placeholder="Masukkan Nama Anda"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Produk</label></td>
+          <td>
+            <select name="produk" id="">
+              <option value="TV">TV</option>
+              <option value="AC">AC</option>
+              <option value="Kulkas">Kulkas</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">jumlah</label></td>
+          <td>
+            <input
+              type="text"
+              name="jumlah"
+              id=""
+              placeholder="Masukkan jumlah Anda"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <button type="button" name="proses" onclick="dataPembeli()">Beli</button>
+          </th>
+        </tr>
+      </table>
+    </form>
+    <p id="hasil"></p>
+    <script src="script.js"></script>
+  </body>
+</html> 
