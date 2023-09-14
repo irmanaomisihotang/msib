@@ -1,0 +1,36 @@
+<script>
+    class gempa{
+        constructor (lokasi, skala){
+        this.lokasi = lokasi;
+        this.skala = skala;
+    }
+    dampak(){
+        let dampak = " ";
+        if(this.skala <= 2) dampak = "tidak terasa";
+        else if (this.skala > 2 && this.skala <=4) dampak = " bangunan ratak retak";
+        else if (this.skala >4 && this.skala <= 6) dampak = "bangunan roboh";
+        else dampak = "bangunan roboh dan tsunami";
+
+        
+        document.write("Lokasi : ",this.lokasi);
+        document.write("<br>Skala : ", this.skala);
+        document.write("<br>Dampak : " + dampak);
+        document.write("<br>__________________________________<br>");
+    }
+    }
+    document.write("<h1> Informasi Gempa Hari ini di Seluruh Dunia</h1>")
+
+    let g1 = new gempa("Jepang", 5);
+    let g2 = new gempa("Malaysia", 8);
+    let g3 = new gempa("korea", 3);
+    let g4 = new gempa("indonesia", 2);
+    let g5 = new gempa("Rusia", 6);
+
+    g1.dampak();
+    g2.dampak();
+    g3.dampak();
+    g4.dampak();
+    g5.dampak();
+    
+        
+</script>
